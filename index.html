@@ -27,6 +27,7 @@
 
             .hero-heading{
                 text-align: center;
+                font-size: 60px;
             }
 
             .hero-cont{
@@ -54,6 +55,7 @@
             .img-1{
                 display: block;
                 right:-310px;
+                height: fit-content;
             }
             .img-2{
                 display: block;
@@ -95,13 +97,17 @@
                 width: 100%;
                 text-align: center;
             }
+
+            .ready-cont{
+                font-size: 32px;
+            }
         }
 
     </style>
 </head>
 <body>
     <!-- wrapper -->
-    <div class="relative font-serif overflow-y-hidden">
+    <div class="relative font-sans overflow-y-hidden">
 
         <nav class="w-full relative bg-[#404eed] py-4 px-4">
             <div class="w-full relative max-w-[1260px] mx-auto flex md:justify-between justify-between items-center">
@@ -110,7 +116,7 @@
                 <img src="./img/logo.svg" loading="lazy" width="124px" height="34px" class="cursor-pointer" alt="#">
             </div>
             <!-- menu -->
-            <ul class="relative menu hidden lg:flex items-center space-x-6 ">
+            <ul class="relative menu hidden lg:flex items-center space-x-6">
                 <li class="text-base leading-6 text-white m-[10px] p-[10px] cursor-pointer relative transition-colors duration-200 group"><a href="#" class="transition-colors duration-200 group-hover:underline">Download</a></li>
                 <li class="text-base leading-6 text-white m-[10px] p-[10px] cursor-pointer relative transition-colors duration-200 group"><a href="#" class="transition-colors duration-200 group-hover:underline">Nitro</a></li>
                 <li class="text-base leading-6 text-white m-[10px] p-[10px] cursor-pointer relative transition-colors duration-200 group"><a href="#" class="transition-colors duration-200 group-hover:underline">Discover</a></li>
@@ -135,19 +141,19 @@
         </nav>
 
         <!-- Hero section -->
-        <section class="relative w-full max-h-[650px] bg-[#404eed] overflow-x-hidden mx-auto">
+        <section class="relative w-full max-h-[830px] md:max-h-[650px] lg:max-h-[650px] bg-[#404eed] overflow-x-hidden mx-auto">
             
             <div class="relative w-full max-w-[2560px] mx-auto">
                 <img src="./img/Image0.svg" loading="lazy" class="absolute bottom-0 z-[1] w-full scale-x-150" alt="#">
-                <img src="./img/Image1.svg" class="absolute bottom-0 z-[1] hidden md:-right-[100px] md:block lg:-right-[445px] lg:block img-1" alt="#">
+                <img src="./img/Image1.svg" class="absolute bottom-0 z-[1] right-[100px] h-[60px] sm:h-[200px] md:-right-[100px] md:block md:h-fit lg:-right-[445px] lg:h-fit lg:block img-1" alt="#">
                 <img src="./img/Image2.svg" class="absolute bottom-0 z-[1] hidden lg:-left-[489px] lg:block img-2" alt="#">
             <div class="w-full max-w-[1260px] mx-auto z-[1] flex items-center hero-content justify-center py-8  px-4 lg:py-[120px] lg:px-10">
                 <div class="w-full max-w-[660px] content mb-8">
-                    <h1 class="text-white w-full text-[60px] leading-[54px] font-black hero-heading text-start lg:text-center z-[20]">IMAGINE A <br class="block break"> PLACE...</h1>
+                    <h1 class="text-white w-full text-4xl md:text-[60px] lg:text-[60px] leading-[54px] font-black hero-heading text-start lg:text-center z-[20]">IMAGINE A <br class="block break"> PLACE...</h1>
                     <p class="text-white w-full text-base lg:text-[18px] sm:w-[300px] leading-8 mt-10 hero-cont text-start lg:w-full lg:text-center z-[20]">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
                 <div class="w-full flex flex-col buttons justify-start lg:justify-center lg:flex-row">
-                    <button class="btn w-fit py-4 px-4 lg:py-4 lg:px-6 bg-white rounded-full transition-all duration-200 mt-6 mr-6 hover:shadow-lg hover:text-[#404EED] z-[20]"><i class="fa-solid fa-arrow-right-to-bracket fa-rotate-90 text-lg leading-[18px] mr-2" ></i><span class="text-xl btn-cont leading-6 font-medium">Download for Windows</span></button>
-                    <button class="btn w-fit py-4 px-4 lg:py-4 lg:px-6 bg-black rounded-full transition-all duration-200 mt-6 hover:shadow-lg hover:bg-[#23272a] z-[20]"><span class="text-xl leading-6 btn-cont text-white font-medium">Open Discord in your browser</span></button>
+                    <button class="btn w-fit py-2 px-4 lg:py-4 lg:px-6 bg-white rounded-full transition-all duration-200 mt-6 mr-6 hover:shadow-lg hover:text-[#404EED] z-[20]"><i class="fa-solid fa-arrow-right-to-bracket fa-rotate-90 text-lg leading-[18px] mr-2" ></i><span class="text-sm md:text-xl lg:text-xl btn-cont leading-6 font-medium">Download for Windows</span></button>
+                    <button class="btn w-fit py-2 px-4 lg:py-4 lg:px-6 bg-black rounded-full transition-all duration-200 mt-6 hover:shadow-lg hover:bg-[#23272a] z-[20]"><span class="text-sm md:text-xl lg:text-xl leading-6 btn-cont text-white font-medium">Open Discord in your browser</span></button>
                 </div>
                 </div>
             </div>
@@ -161,8 +167,8 @@
                 <img src="./img/section1Image.svg" loading="lazy" class="sec-img lg:w-[560px] lg:h-[340px] md:w-[460px] md:h-[240px]" alt="#">
                 <!-- content -->
                 <div class="relative sec-cont w-full md:max-w-[380px] lg:max-w-[380px]">
-                    <h2 class="text-3xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">Create an invite-only place where you belong</h2>
-                    <p class="mt-6 text-base md:text-xl sec-desc lg:text-xl leading-4 md:leading-8 lg:leading-8 text-[#23272a]">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+                    <h2 class="text-2xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">Create an invite-only place where you belong</h2>
+                    <p class="mt-6 text-sm md:text-xl sec-desc lg:text-xl leading-4 md:leading-8 lg:leading-8 text-[#23272a]">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
                 </div>
             </div>
         </section>
@@ -171,8 +177,8 @@
         <section class="relative w-full max-h-[680px] bg-[#f6f6f6]">
             <div class="ralative w-full max-w-[1260px] py-8  px-4 lg:py-[120px] lg:px-10 flex flex-col-reverse md:flex-row sec justify-between items-center mx-auto">
                 <div class="relative sec-cont w-full md:max-w-[380px] lg:max-w-[380px]">
-                    <h2 class="text-3xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">Where hanging out is easy</h2>
-                    <p class="mt-6 text-base md:text-xl sec-desc lg:text-xl leading-4 md:leading-8 lg:leading-8 text-[#23272a]">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+                    <h2 class="text-2xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">Where hanging out is easy</h2>
+                    <p class="mt-6 text-sm md:text-xl sec-desc lg:text-xl leading-4 md:leading-8 lg:leading-8 text-[#23272a]">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
                 </div>
                 <img src="./img/section2Image.svg" loading="lazy" class="sec-img lg:w-[560px] lg:h-[340px] md:w-[460px] md:h-[240px]" alt="#">
             </div>
@@ -183,8 +189,8 @@
             <div class="ralative w-full max-w-[1260px] py-8  px-4 lg:py-[120px] lg:px-10 flex flex-col-reverse md:flex-row sec justify-between items-center mx-auto">
                 <img src="./img/section3Image.svg" loading="lazy" class="sec-img lg:w-[560px] lg:h-[340px] md:w-[460px] md:h-[240px]" alt="#">
                 <div class="relative sec-cont w-full md:max-w-[380px] lg:max-w-[380px]">
-                    <h2 class="text-3xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">From few to a fandom</h2>
-                    <p class="mt-6 text-base md:text-xl sec-desc lg:text-xl leading-4 md:leading-8 lg:leading-8 text-[#23272a]">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+                    <h2 class="text-2xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">From few to a fandom</h2>
+                    <p class="mt-6 text-sm md:text-xl sec-desc lg:text-xl leading-4 md:leading-8 lg:leading-8 text-[#23272a]">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
                 </div>
             </div>
         </section>
@@ -193,8 +199,8 @@
         <section class="relative w-full bg-[#f6f6f6]">
             <div class="ralative w-full max-w-[1260px] py-8 px-4 lg:pt-[120px] lg:px-10 flex flex-col justify-between items-center mx-auto">
                 <div class="relative stay-cont lg:max-w-[830px] min-[1180px]:max-w-[980px]">
-                    <h2 class="lg:w-full md:w-full text-4xl md:text-5xl lg:text-[50px] sm:w-[300px] leading-[38px] font-black sm:text-start stay-head lg:text-center">RELIABLE TECH FOR STAYING CLOSE</h2>
-                    <p class="lg:w-full md:w-full text-xl leading-8 text-[#23272a] sm:w-[300px] font-extralight sm:text-start stay-text lg:text-center mt-6">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+                    <h2 class="lg:w-full md:w-full text-3xl md:text-5xl lg:text-[50px] leading-[38px] font-black sm:text-start stay-head lg:text-center">RELIABLE TECH FOR STAYING CLOSE</h2>
+                    <p class="lg:w-full md:w-full text-base leading-8 text-[#23272a] font-extralight sm:text-start stay-text lg:text-center mt-6">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
                 </div>
                 <img src="./img/section4Image.svg" loading="lazy" class="mt-4" width="1180px" alt="#">
             </div>
@@ -204,15 +210,15 @@
         <section class="relative w-full bg-[#f6f6f6]">
             <div class="relative w-full max-w-[1260px] px-10 flex flex-col justify-center items-center mx-auto pb-[120px]">
                 <img src="./img/section5Image.svg" loading="lazy" class="absolute top-0" alt="#">
-                <h3 class="text-[32px] mt-[30px] leading-[38px] font-bold z-[1]">Ready to start your journey?</h3>
-                <button class="btn w-fit py-4 px-6 lg:py-4 lg:px-8 bg-[#5865f2] text-white rounded-full transition-all duration-200 mt-6 hover:shadow-lg  hover:bg-[#5865f2d0] z-[20]"><i class="fa-solid fa-arrow-right-to-bracket fa-rotate-90 text-lg leading-[18px] mr-2" ></i><span class="text-xl btn-cont leading-6 font-medium">Download for Windows</span></button>
+                <h3 class="text-lg md:text-[32px] lg:text-[32px] mt-[30px] ready-cont leading-[38px] font-bold z-[1]">Ready to start your journey?</h3>
+                <button class="btn w-fit py-4 px-6 lg:py-4 lg:px-8 bg-[#5865f2] text-white rounded-full transition-all duration-200 mt-6 hover:shadow-lg  hover:bg-[#5865f2d0] z-[20]"><i class="fa-solid fa-arrow-right-to-bracket fa-rotate-90 text-lg leading-[18px] mr-2" ></i><span class="text-sm md:text-xl lg:text-xl btn-cont leading-6 font-medium">Download for Windows</span></button>
             </div>
         </section>
 
         <!-- footer section -->
         <footer class="relative w-full bg-[#23272a] pt-[80px] pb-16">
             <div class="relative w-full max-w-[1260px] mx-auto px-10">
-            <div class="relative w-full flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between">
+            <div class="relative w-full flex flex-col md:flex-row lg:flex-row justify-between">
                 <!-- media -->
                 <div class="relative w-full max-w-[280px] flex flex-col mb-[56px]">
                     <div class="flex items-center space-x-2">
@@ -228,8 +234,9 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>  
                     </div>
                 </div>
-                <div class="relative flex flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-nowrap gap-5">
-                    <!-- Product -->
+                <div class="relative flex flex-wrap lg:flex-nowrap gap-5">
+                <div class="relative flex">
+                        <!-- Product -->
                 <div class="relative w-[180px] flex flex-col mb-10">
                     <h3 class="text-base leading-6 text-[#5865f2] mb-5">Product</h3>
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">Download</a>
@@ -247,8 +254,10 @@
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">Newsroom</a>
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">Fall Release</a>
                 </div>
-                <!-- Resources -->
-                <div class="relative w-[180px] flex flex-col mb-10">
+                </div>
+               <div class="relative flex">
+                 <!-- Resources -->
+                 <div class="relative w-[180px] flex flex-col mb-10">
                     <h3 class="text-base leading-6 text-[#5865f2] mb-5">Resources</h3>
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">College</a>
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">Support</a>
@@ -273,6 +282,7 @@
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">Licenses</a>
                     <a href="#" class="text-base leading-6 text-white cursor-pointer transition-colors duration-200 hover:underline">Company Information</a>
                 </div>
+               </div>
                 </div>
             </div>
             <div class="relative w-full border-t-2 border-[#5865f2] pt-7 flex justify-between items-center">
