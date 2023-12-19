@@ -12,6 +12,7 @@
             .menu{
                 display: flex;
             }
+
             .menu-bar{
                 display: none;
             }  
@@ -52,11 +53,17 @@
             .btn-cont{
                 font-size: 20px;
             }
+
+            .img{
+                display: block;
+            }
+
             .img-1{
                 display: block;
                 right:-310px;
                 height: fit-content;
             }
+
             .img-2{
                 display: block;
                 left:-360px;
@@ -66,6 +73,7 @@
                 flex-direction: row;
                 padding: 120px 40px;
             }
+
             .sec-img{
                 width: 680px;
                 height: 440px;
@@ -144,9 +152,9 @@
         <section class="relative w-full max-h-[830px] md:max-h-[650px] lg:max-h-[650px] bg-[#404eed] overflow-x-hidden mx-auto">
             
             <div class="relative w-full max-w-[2560px] mx-auto">
-                <img src="./img/Image0.svg" loading="lazy" class="absolute bottom-0 z-[1] w-full scale-x-150" alt="#">
-                <img src="./img/Image1.svg" class="absolute bottom-0 z-[1] right-[100px] h-[60px] sm:h-[200px] md:-right-[100px] md:block md:h-fit lg:-right-[445px] lg:h-fit lg:block img-1" alt="#">
-                <img src="./img/Image2.svg" class="absolute bottom-0 z-[1] hidden lg:-left-[489px] lg:block img-2" alt="#">
+                <img src="./img/Image0.svg" loading="lazy" class="absolute bottom-0 z-[1] img hidden md:block lg:block w-full scale-x-150" alt="#">
+                <img src="./img/Image1.svg" class="absolute bottom-0 z-[1] hidden md:-right-[100px] md:block lg:-right-[445px] lg:block img-1" alt="#">
+                <img src="./img/Image2.svg" class="absolute bottom-0 z-[1] h-[60px] left-0 sm:hidden md:hidden lg:-left-[489px] lg:h-fit lg:block img-2" alt="#">
             <div class="w-full max-w-[1260px] mx-auto z-[1] flex items-center hero-content justify-center py-8  px-4 lg:py-[120px] lg:px-10">
                 <div class="w-full max-w-[660px] content mb-8">
                     <h1 class="text-white w-full text-4xl md:text-[60px] lg:text-[60px] leading-[54px] font-black hero-heading text-start lg:text-center z-[20]">IMAGINE A <br class="block break"> PLACE...</h1>
@@ -186,7 +194,7 @@
 
         <!-- Few to a fendom -->
         <section class="relative w-full max-h-[680px] bg-white">
-            <div class="ralative w-full max-w-[1260px] py-8  px-4 lg:py-[120px] lg:px-10 flex flex-col-reverse md:flex-row sec justify-between items-center mx-auto">
+            <div class="ralative w-full max-w-[1260px] py-8  px-4 lg:py-[120px] lg:px-10 flex flex-col md:flex-row sec justify-between items-center mx-auto">
                 <img src="./img/section3Image.svg" loading="lazy" class="sec-img lg:w-[560px] lg:h-[340px] md:w-[460px] md:h-[240px]" alt="#">
                 <div class="relative sec-cont w-full md:max-w-[380px] lg:max-w-[380px]">
                     <h2 class="text-2xl md:text-[46px] sec-heading lg:text-[46px] leading-8 md:leading-[56px] lg:leading-[56px] font-bold">From few to a fandom</h2>
@@ -287,7 +295,7 @@
             </div>
             <div class="relative w-full border-t-2 border-[#5865f2] pt-7 flex justify-between items-center">
                 <img src="./img/logo.svg" loading="lazy" alt="#">
-                <button class="py-[7px] px-4 bg-[#5865f2]  rounded-full transition-all duration-200 hover:shadow-lg hover:bg-[#5865f2d0] z-[20]"><span class="text-sm leading-4 text-white">Open Discord</span></button>
+                <button class="py-2 px-4 bg-[#5865f2]  rounded-full transition-all duration-200 hover:shadow-lg hover:bg-[#5865f2d0] z-[20]"><span class="text-sm leading-4 text-white">Open Discord</span></button>
             </div>
             </div>
         </footer>
